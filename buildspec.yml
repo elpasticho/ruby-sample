@@ -3,3 +3,4 @@ phases:
   build:
     commands:
       - ruby rubytestapp.rb
+      - ls -la
