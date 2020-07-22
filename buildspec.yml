@@ -2,7 +2,7 @@ version: 0.1
 phases:
   build:
     commands:
-      - sudo apt-get update && sudo apt-get install python python-pip && sudo pip install awscli
+      - apt-get update && apt-get install python python-pip && pip install awscli
       - ruby rubytestapp.rb
       - base=$(basename $PWD) && cd .. && tar -czf hubstaff-account.tar.gz $base
       - aws s3 cp hubstaff-account.tar.gz s3://codepipeline-starter-any-pr/
