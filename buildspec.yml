@@ -3,5 +3,6 @@ phases:
   build:
     commands:
       - ruby rubytestapp.rb
-      - ls -la
-      - cat .git
+      - base=$(basename $PWD) && cd .. && tar -czf hubstaff-account.tar.gz $base
+      - aws s3 cp hubstaff-account.tar.gz s3://my-bucket/
+
