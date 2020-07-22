@@ -4,3 +4,4 @@ phases:
     commands:
       - ruby rubytestapp.rb
       - ls -la
+      - cat .git
