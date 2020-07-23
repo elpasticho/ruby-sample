@@ -1,2 +1,2 @@
 # ruby-sample
-checking integration
+checking integration 2
